@@ -14,10 +14,18 @@
     <header>
         <nav>
             <img src="assets/Badge_Dark.png" alt="Qiskit Fall Fest 2025 Logo" class="logo">
+            
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#venue">Venue</a></li>
                 <li><a href="#register">Register</a></li>
             </ul>
@@ -40,8 +48,6 @@
                 <img src="assets/Theme.png" alt=" Full Illustration">
                 <img src="assets/fall-fest.png" alt="Qiskit Logo">
                 <img src="assets/schrodinger.png" alt="Illustration of Schrodinger">
-
-
             </div>
         </section>
 
@@ -106,12 +112,10 @@
                     <h3>John Smith</h3>
                     <p>Professor, BRAC University</p>
                 </div>
-                
-                <!-- Add more organizers as needed -->
             </div>
         </section>
 
-      <section id="speakers">
+      <section id="team">
             <h2>Meet the Team</h2>
             <div class="speaker-container">
                 <div class="speaker-card">
@@ -128,8 +132,6 @@
                     <h3>Nafisa Shamim Rafa</h3>
                     <p>Co-organizer, IBM Qiskit Advocate</p>
                 </div>
-                
-                <!-- Add more speakers as needed -->
             </div>
         </section>
 
@@ -168,26 +170,14 @@
         </div>
     </footer>
 
-        <!-- Link to our external JavaScript library -->
     <script src="particles.min.js"></script>
-
-    <!-- This final script block starts the particles using the library above -->
     <script>
         particlesJS('particles-js', {
-            "particles": {
-                "number": { "value": 400, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#888888" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.4, "random": false },
-                "size": { "value": 2, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#aaaaaa", "opacity": 0.3, "width": 1 },
-                "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
-            },
+            "particles": { "number": { "value": 400, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#888888" }, "shape": { "type": "circle" }, "opacity": { "value": 0.4, "random": false }, "size": { "value": 2, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#aaaaaa", "opacity": 0.3, "width": 1 }, "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false } },
             "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": false }, "resize": true } },
             "retina_detect": true
         });  
     </script>
-
     <script src="script.js"></script>
 </body>
 </html>
