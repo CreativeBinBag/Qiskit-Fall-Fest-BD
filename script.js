@@ -16,11 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
-    // --- 1. Schedule Tabs Logic ---
-    document.getElementById("defaultOpen").click();
-
-    // --- 2. Quantum Coin Flip for Register Buttons ---
+    // --- Quantum Coin Flip for Register Buttons ---
     const registerBtns = [document.getElementById('register-btn'), document.getElementById('register-btn-footer')];
     let intervalId = null;
     registerBtns.forEach(btn => {
@@ -38,13 +34,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // --- 3. Bilingual Looping Typewriter Logic ---
+    // --- Bilingual Looping Typewriter Logic ---
     const heroTitle = document.querySelector('#hero h1');
     const heroSubtitle = document.querySelector('#hero .subtitle');
 
     const content = [
-        { lang: 'en', h1: 'Happening this Fall...', p: 'The first IBM-supported quantum event in Bangladesh. October 2025.' },
-        { lang: 'bn', h1: 'আসছে এই হেমন্তে...', p: 'বাংলাদেশে প্রথম আইবিএম-সমর্থিত কোয়ান্টাম ইভেন্ট। অক্টোবর ২০২৫।' }
+        { lang: 'en', h1: 'Happening this Fall...', p: 'The first IBM-supported quantum event in Bangladesh. November 2025.' },
+        { lang: 'bn', h1: 'আসছে এই নভেম্বরে...', p: 'বাংলাদেশে প্রথম আইবিএম-সমর্থিত কোয়ান্টাম ইভেন্ট। নভেম্বর ২০২৫।' }
     ];
 
     let currentIndex = 0;
@@ -97,18 +93,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     startBilingualLoop();
+    
 });
-
-function openTab(tabName, elmnt) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-    }
-    document.getElementById(tabName).style.display = "block";
-    elmnt.classList.add("active");
-}

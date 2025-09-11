@@ -64,53 +64,89 @@
             </div>
         </section>
 
+        <!-- SCHEDULE SECTION -->
         <section id="schedule">
-            <h2>Schedule</h2>
-            <div class="schedule-tabs">
-                <button class="tablink" onclick="openTab('day1', this)" id="defaultOpen">Week 1: Quantum Foundations</button>
-                <button class="tablink" onclick="openTab('day2', this)">Week 2: Quantum Futures</button>
+            <h2>Event Schedule & Learning Path</h2>
+            <div class="schedule-intro">
+                <p>Our event will kick off with a special hybrid session at BRAC University, followed by a month-long online workshop series. Dive deep into quantum computing from anywhere in the world!</p>
             </div>
-
-            <div id="day1" class="tabcontent">
-                <h3>October 20, 2025</h3>
-                <ul>
-                    <li><strong>09:00 AM - 10:00 AM:</strong> Registration & Welcome Coffee <span class="tag in-person">In-Person</span></li>
-                    <li><strong>10:00 AM - 11:30 AM:</strong> Introduction to Quantum Computing with Qiskit <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>11:30 AM - 01:00 PM:</strong> Workshop: Your First Quantum Circuit <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>01:00 PM - 02:00 PM:</strong> Lunch Break <span class="tag in-person">In-Person</span></li>
-                    <li><strong>02:00 PM - 03:30 PM:</strong> Keynote: The Future of Quantum in Bangladesh <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>03:30 PM - 05:00 PM:</strong> Networking & Community Mixer <span class="tag in-person">In-Person</span></li>
+            
+            <!-- Kick-off Day Card -->
+            <div class="kickoff-event-card">
+                <h3>Hybrid Kick-off Day <span class="kickoff-date">November 1</span></h3>
+                <ul class="kickoff-agenda">
+                    <li><span>Welcome</span> <span class="tag in-person">In-Person</span></li>
+                    <li><span>Keynote: The Present and Future of Quantum</span> <span class="tag hybrid">Hybrid</span></li>
+                    <li><span>Session 1: Foundations</span> <span class="tag hybrid">Hybrid</span></li>
+                    <li><span>Networking Lunch Break</span> <span class="tag in-person">In-Person</span></li>
                 </ul>
             </div>
 
-            <div id="day2" class="tabcontent">
-                <h3>October 27, 2025</h3>
-                <ul>
-                    <li><strong>10:00 AM - 11:30 AM:</strong> Advanced Qiskit: Algorithms & Applications <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>11:30 AM - 01:00 PM:</strong> Workshop: Quantum Machine Learning <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>01:00 PM - 02:00 PM:</strong> Lunch Break <span class="tag in-person">In-Person</span></li>
-                    <li><strong>02:00 PM - 03:30 PM:</strong> Panel: Building a Quantum Career in Bangladesh <span class="tag hybrid">Hybrid</span></li>
-                    <li><strong>03:30 PM - 05:00 PM:</strong> Closing Remarks & Certificate Distribution <span class="tag hybrid">Hybrid</span></li>
-                </ul>
+            <div class="timeline-intro-text">
+                <p>Following the kick-off, your quantum journey will continue with our online workshop series, streamed live on YouTube. All recordings and notebooks will be available afterward.</p>
+            </div>
+            
+            <!-- Learning Path Timeline -->
+            <div class="timeline-container">
+                <!-- Event 2 -->
+                <div class="timeline-event">
+                    <div class="timeline-gate"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">November 8</span>
+                        <h3>Session 2: Implementation</h3>
+                        <p>Bridge theory and practice as you implement core quantum information concepts and simple algorithms directly in Qiskit.</p>
+                        <span class="tag online">Online</span>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="timeline-event">
+                    <div class="timeline-gate"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">November 15</span>
+                        <h3>Session 3: Qiskit Machine Learning</h3>
+                        <p>A hands-on exploration of Qiskit for machine learning, with a focus on model building, training, and application.</p>
+                        <span class="tag online">Online</span>
+                    </div>
+                </div>
+                <!-- Event 4 -->
+                <div class="timeline-event">
+                    <div class="timeline-gate"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">November 22</span>
+                        <h3>Session 4: Error Mitigation</h3>
+                        <p>Focus on practical error mitigation and correction techniques, and learn how to implement them within the Qiskit framework.</p>
+                        <span class="tag online">Online</span>
+                    </div>
+                </div>
+                <!-- Event 5 -->
+                <div class="timeline-event">
+                    <div class="timeline-gate"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">November 29</span>
+                        <h3>Session 5: Final Project</h3>
+                        <p>Culminate the series with a final project built in Qiskit. You will code, simulate, and prepare for execution on real quantum hardware.</p>
+                        <span class="tag online">Online</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="speakers">
             <h2>Meet the Speakers</h2>
             <div class="speaker-container">
-                <div class="speaker-card">
-                    <div class="speaker-photo">
-                        <img src="speaker-placeholder.png" alt="Speaker 1">
+                <div class="tba-banner">
+                    <div class="tba-content">
+                        <div class="tba-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        </div>
+                        <h3>To be announced...</h3>
+                        <p>We are currently finalizing a lineup of brilliant speakers from the field. Check back soon for the official announcement!</p>
+                        <div class="pulsing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <h3>Dr. Jane Doe</h3>
-                    <p>Quantum Researcher, IBM</p>
-                </div>
-                <div class="speaker-card">
-                     <div class="speaker-photo">
-                        <img src="speaker-placeholder.png" alt="Speaker 2">
-                    </div>
-                    <h3>John Smith</h3>
-                    <p>Professor, BRAC University</p>
                 </div>
             </div>
         </section>
@@ -142,17 +178,26 @@
                 <div class="venue-details">
                     <h3><span class="tag in-person">In-Person</span> BRAC University</h3>
                     <p>Merul Badda, Dhaka 1212, Bangladesh</p>
-                    <p>Join us on the beautiful campus of BRAC University.</p>
+                    <p>Join us on the beautiful campus of BRAC University for our Kick-off Day!</p>
                 </div>
                 <div class="venue-details">
-                    <h3><span class="tag hybrid">Online</span> Global Access</h3>
+                    <h3><span class="tag online">Online</span> Global Access</h3>
                     <p>From anywhere in the world!</p>
-                    <p>Links and details will be sent to all registered online participants.</p>
+                    <p>All sessions will be streamed. Links will be sent to registered participants.</p>
                 </div>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902402829289!2d90.4042358155069!3d23.75191878458918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b89a37257a03%3A0x4A70A90220A12852!2sBRAC%20University!5e0!3m2!1sen!2sbd!4v1662037199225!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://maps.google.com/maps?q=BRAC+University,Dhaka,Bangladesh&z=17&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             </div>
+
         </section>
 
         <section id="register">
