@@ -93,5 +93,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     startBilingualLoop();
+
+
+// --- Speaker Accordion Logic ---
+const accordions = document.querySelectorAll('.speaker-card-accordion');
+
+accordions.forEach(accordion => {
+    const header = accordion.querySelector('.speaker-header');
+    const body = accordion.querySelector('.speaker-body');
+
+    header.addEventListener('click', () => {
+        const isActive = accordion.classList.contains('active');
+
+        accordions.forEach(acc => {
+            acc.classList.remove('active');
+            acc.querySelector('.speaker-body').style.maxHeight = null;
+        });
+
+        if (!isActive) {
+            accordion.classList.add('active');
+            body.style.maxHeight = body.scrollHeight + "px";
+        }
+    });
+});
+    
     
 });
