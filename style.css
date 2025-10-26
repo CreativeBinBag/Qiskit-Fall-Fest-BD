@@ -424,6 +424,62 @@ nav a:hover {
   color: var(--white);
 }
 
+/* --- New Symposium Timeline Styles --- */
+.symposium-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+.symposium-header h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.symposium-header p {
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+.timeline-content h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.session-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--purple-60);
+}
+
+.talk-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+.talk-list li {
+  padding-left: 1rem;
+  border-left: 2px solid var(--magenta-50);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+.talk-list li:last-child {
+  margin-bottom: 0;
+}
+.talk-list li strong {
+  font-weight: 700;
+  color: var(--dark-bg);
+}
+.talk-list li em {
+  color: #555;
+  font-size: 0.9rem;
+}
+
 /* --- Speakers Section --- */
 #speakers {
   background-color: var(--dark-bg);
