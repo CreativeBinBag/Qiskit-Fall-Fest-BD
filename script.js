@@ -116,6 +116,16 @@ accordions.forEach(accordion => {
         }
     });
 });
+
+// --- NEW: Q&A Terminal Toggle Logic ---
+const qaEntries = document.querySelectorAll('.qa-question');
+
+qaEntries.forEach(question => {
+    question.addEventListener('click', function() {
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+    });
+});
     
     
 });
